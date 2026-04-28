@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin Nitoi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="header-top">
+      <h1>Justin Nitoi</h1>
+      <button id="theme-toggle" onclick="toggleTheme()">Dark</button>
+    </div>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi, I'm Justin. I'm a Computer Science student at the University of Waterloo. I also love math.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/pademinune/stremio-catalogs">Stremio Catalogs</a> — A microservice that serves movie metadata to be called by the Stremio Client.</li>
+        <li><a href="https://github.com/pademinune/NameNet">NameNet</a> — A model trained using pytorch to classify names.</li>
+        <li><a href="https://github.com/pademinune/Digit_Neural_Net">Digit Neural Net</a> — A neural network built from scratch to classify handwritten digits.</li>
+        <li><a href="https://github.com/pademinune/Armor-Penetration-Calculator">Armor Penetration Calculator</a> — A client side mod made for World of Tanks.</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="Justin-Nitoi-Resume.pdf">Download PDF</a></p>
+    </section>
+  </main>
+  <script>
+    function toggleTheme() {
+      const dark = document.body.classList.toggle('dark');
+      document.getElementById('theme-toggle').textContent = dark ? 'Light' : 'Dark';
+    }
+  </script>
+</body>
+</html>
