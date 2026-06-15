@@ -1,57 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Justin Nitoi</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <base target="_blank">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin Nitoi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body class="dark">
-    <header>
-        <div id="header-top">
-            <h1>Justin Nitoi</h1>
-            <button id="theme-toggle" onclick="toggleTheme()">Light</button>
+<body>
+  <main class="container">
+    <h1>Justin Nitoi</h1>
+    <p class="bio">Computer Science student at the University of Waterloo. Math is great.</p>
+
+    <nav class="links">
+      <span class="section-label">Info</span>
+
+      <a href="Justin-Nitoi-Resume.pdf" class="link-btn" target="_blank" rel="noopener">
+        <span class="btn-label">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+          Resume
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="https://github.com/justinnitoi" class="link-btn" target="_blank" rel="noopener">
+        <span class="btn-label">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          GitHub
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/justinnitoi/" class="link-btn" target="_blank" rel="noopener">
+        <span class="btn-label">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <span class="section-label">Projects</span>
+
+      <div class="link-btn accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Stremio Catalogs</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="accordion-content">
+          <div class="project-desc">
+            <p>A microservice serving movie catalogs for the Stremio Client.</p>
+            <a href="https://github.com/JustinNitoi/stremio-catalogs" target="_blank" re="noopener">Source ↗</a>
+            <a href="https://stremio-catalogs.vercel.app/" target="_blank" rel="noopener">Visit ↗</a>
+          </div>
         </div>
-        <nav>
-            <a href="Justin-Nitoi-Resume.pdf">Resume</a> |
-            <a href="https://github.com/justinnitoi">GitHub</a> |
-            <a href="https://www.linkedin.com/in/justinnitoi/">LinkedIn</a>
-        </nav>
-    </header>
+      </div>
 
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>Hi, I'm Justin. I'm a Computer Science student at the University of Waterloo. I am also very passionate about math and solving problems.</p>
-        </section>
+      <div class="link-btn accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Stremio Movie Trailers</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="accordion-content">
+          <div class="project-desc">
+            <p>A microservice serving movie trailer links for the Stremio Client.</p>
+            <a href="https://stremio-movie-trailers.vercel.app/" target="_blank" rel="noopener">Visit ↗</a>
+          </div>
+        </div>
+      </div>
 
-        <section id="projects">
-            <h2>Projects (GitHub links)</h2>
-            <ul>
-                <li><a href="https://github.com/pademinune/stremio-catalogs">Stremio Catalogs</a> — A microservice that serves movie metadata to be called by the Stremio Client.</li>
-                <li><a href="https://github.com/pademinune/NameNet">NameNet</a> — A model trained using pytorch to classify names.</li>
-                <li><a href="https://github.com/pademinune/Digit_Neural_Net">Digit Neural Net</a> — A neural network built from scratch to classify handwritten digits.</li>
-                <li><a href="https://github.com/pademinune/Armor-Penetration-Calculator">Armor Penetration Calculator</a> — A client side mod made for World of Tanks.</li>
-            </ul>
-        </section>
+      <div class="link-btn accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Steady Hand</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="accordion-content">
+          <div class="project-desc">
+            <p>A cursor-based game you can play in your web browser.</p>
+            <a href="https://steady-hand.vercel.app/" target="_blank" rel="noopener">Visit ↗</a>
+          </div>
+        </div>
+      </div>
 
-        <section id="internet-apps">
-            <h2>Internet Apps (Frontend links)</h2>
-            <p>These are the links to my projects that can be accessed in your browser.</p>
-            <ul>
-                <li><a href="https://stremio-catalogs.vercel.app/">Stremio Catalogs</a> — A microservice serving movie catalogs for the Stremio Client.</li>
-                <li><a href="https://stremio-movie-trailers.vercel.app/">Stremio Movie Trailers</a> — A microservice serving movie trailer links for the Stremio Client.</li>
-                <li><a href="https://steady-hand.vercel.app/">Steady Hand</a> — A cursor-based game you can play in your web browser.</li>
-            </ul>
-        </section>
+      <div class="link-btn accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Armor Penetration Calculator</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="accordion-content">
+          <div class="project-desc">
+            <p>A client side mod made for World of Tanks that calculates a tank's effective armor.</p>
+            <a href="https://github.com/JustinNitoi/Armor-Penetration-Calculator" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </div>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p><a href="Justin-Nitoi-Resume.pdf">Download PDF</a></p>
-        </section>
-    </main>
-    <script src="dark-theme.js"></script>
+      <div class="link-btn accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>NameNet</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="accordion-content">
+          <div class="project-desc">
+            <p>A model trained using pytorch to classify names.</p>
+            <a href="https://github.com/JustinNitoi/NameNet" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </main>
+  <script>
+    document.querySelectorAll('.accordion').forEach(accordion => {
+      const trigger = accordion.querySelector('.accordion-trigger');
+      const content = accordion.querySelector('.accordion-content');
+      let anim = null;
+
+      trigger.addEventListener('click', () => {
+        const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Snapshot current rendered height before canceling so there's no jump on interrupt
+        const from = content.offsetHeight;
+        if (anim) {
+          anim.cancel();
+          content.style.height = from + 'px';
+          anim = null;
+        }
+
+        const to = isOpen ? 0 : content.scrollHeight;
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+        accordion.classList.toggle('is-open', !isOpen);
+
+        anim = content.animate(
+          [{ height: from + 'px' }, { height: to + 'px' }],
+          {
+            duration: isOpen ? 200 : 280,
+            easing: isOpen ? 'cubic-bezier(0.4, 0, 1, 1)' : 'cubic-bezier(0, 0, 0.2, 1)',
+            fill: 'both'
+          }
+        );
+
+        anim.onfinish = () => {
+          // Commit final state as inline style, then cancel to release fill
+          content.style.height = to === 0 ? '0' : 'auto';
+          anim.cancel();
+          anim = null;
+        };
+      });
+    });
+  </script>
 </body>
 </html>
